@@ -1,0 +1,20 @@
+header {
+  background: var(--c12);
+  padding: 0 34px;
+}
+
+.header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 34px 0;
+}
+
+.header-list {
+  display: flex;
+  gap: 20px;
+}
+
+.header-list a {
+  padding: 20px;
+  color: var(--w);
+}

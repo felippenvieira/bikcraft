@@ -1,0 +1,21 @@
+main {
+  background: var(--c12);
+  display: grid;
+  padding: 0 34px;
+}
+
+.introducao {
+  place-self: center;
+}
+
+.float-right {
+  float: right;
+  height: 100%;
+  margin: 0 -80px -120px 0;
+}
+
+.introducao p {
+  margin-top: 32px;
+  margin-bottom: 20px;
+  max-width: 512px;
+}
