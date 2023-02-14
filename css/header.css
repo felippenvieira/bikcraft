@@ -1,12 +1,12 @@
 header {
   background: var(--c12);
-  padding: 0 34px;
+  paddin: 0 34px;
 }
 
 .header {
   justify-content: space-between;
   align-items: center;
-  padding: 34px 0;
+  padding: 36px 36px;
 }
 
 .header-list {
@@ -15,6 +15,48 @@ header {
 }
 
 .header-list a {
-  padding: 20px;
+  display: inline-block;
+  padding: 12px 16px;
   color: var(--w);
+  position: relative;
+}
+
+.header-list a:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: var(--w);
+  margin-top: 4px;
+  position: absolute;
+}
+
+.header-list a:hover:after {
+  width: 75%;
+  transition: 0.3s;
+}
+
+@media (max-width: 650px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .header-list {
+    flex-wrap: wrap;
+  }
+
+  .header-list a:after {
+    display: none;
+  }
+
+  .header-list a {
+    background: var(--c11);
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-list {
+    place-content: center;
+  }
 }
