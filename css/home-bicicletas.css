@@ -18,6 +18,32 @@
 
 .bicicletas-flex img {
   border-radius: 5px;
+  position: relative;
+}
+
+.bicicletas-flex a {
+  position: relative;
+}
+
+/* BKP */
+.bicicletas-flex a:after {
+  content: "";
+  width: 0%;
+  height: 32px;
+  display: block;
+  background: var(--w);
+  position: absolute;
+  bottom: 50px;
+}
+
+.bicicletas-hover:hover:after {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 8px;
+  content: "VER BIKE";
+  width: 100%;
+  transition: 0.3s;
 }
 
 .bicicletas-flex h2 {
@@ -25,6 +51,11 @@
   padding-bottom: 8px;
   padding-left: 20px;
   position: relative;
+}
+
+.bicicletas-flex h2:hover {
+  color: var(--c8);
+  transition: 0.3s;
 }
 
 .bicicletas-flex h2::before {
