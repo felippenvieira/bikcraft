@@ -4,9 +4,6 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.depoimento-bg div {
-}
-
 .depoimento {
   align-self: end;
   max-width: 530px;

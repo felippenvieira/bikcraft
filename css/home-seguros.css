@@ -1,0 +1,93 @@
+.seguros-bg {
+  background: var(--c11);
+  padding: 32px 0;
+}
+
+.seguros-container {
+  padding: 32px;
+  flex-direction: column;
+  color: var(--w);
+}
+
+.seguros-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 40px;
+}
+
+.prata {
+  max-height: 340px;
+  align-self: center;
+}
+
+.seguro-card {
+  background: var(--c12);
+  padding: 32px;
+  padding-left: 64px;
+  border-radius: 5px;
+}
+
+.seguro-card-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.seguro-card-titulo h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.33;
+  color: var(--c6);
+  position: relative;
+}
+
+.ouro {
+  color: var(--p1) !important;
+}
+
+.seguro-card-titulo span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.33;
+  position: relative;
+}
+
+.seguro-card-titulo span::after {
+  content: "mensal";
+  display: block;
+  position: absolute;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--c6);
+  margin-left: 70px;
+  top: 40px;
+}
+
+.seguro-card ul {
+  padding-top: 20px;
+}
+
+.seguro-card li {
+  padding-top: 20px;
+  position: relative;
+}
+
+.seguro-card li::before {
+  position: absolute;
+  content: url("../img/icones/lista.svg");
+  left: -20px;
+}
+
+.seguro-card button {
+  margin-top: 32px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
