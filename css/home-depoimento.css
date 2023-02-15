@@ -2,6 +2,27 @@
   background: var(--p1);
   display: grid;
   grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+.depoimento-cover {
+  position: relative;
+}
+
+.depoimento-cover::after {
+  display: block;
+  content: url("/img/dec/bottom-right-p.svg");
+  position: absolute;
+  right: -95%;
+  bottom: 5%;
+}
+
+.depoimento-cover::before {
+  display: block;
+  content: url("/img/dec/top-left-p.svg");
+  position: absolute;
+  left: 105%;
+  top: 20px;
 }
 
 .depoimento-cover img {
@@ -23,6 +44,7 @@
   font-weight: 900;
   font-size: 36px;
   line-height: 1.33;
+  padding-top: 32px;
   padding-bottom: 32px;
   position: relative;
 }
@@ -33,7 +55,7 @@
   font-size: 64px;
   color: var(--p2);
   left: -40px;
-  top: -20px;
+  top: -1%;
 }
 
 .depoimento-nome {
@@ -48,6 +70,11 @@
 @media (max-width: 850px) {
   .depoimento {
     padding: 42px;
+  }
+
+  .depoimento-cover::before,
+  .depoimento-cover::after {
+    display: none;
   }
 
   .depoimento-texto span::before {

@@ -1,6 +1,15 @@
 .seguros-bg {
   background: var(--c11);
   padding: 32px 0;
+  position: relative;
+}
+
+.seguros-bg::before {
+  display: block;
+  content: url("/img/dec/bottom-left.svg");
+  position: absolute;
+  left: 2%;
+  bottom: 3%;
 }
 
 .seguros-container {
@@ -93,6 +102,9 @@
 }
 
 @media (max-width: 900px) {
+  .seguros-bg::before {
+    display: none;
+  }
   .seguros-cards {
     grid-template-columns: 1fr;
     gap: 40px;

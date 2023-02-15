@@ -1,6 +1,14 @@
 .introducao-bg {
   background: var(--c12);
   box-shadow: inset 0 -120px var(--w);
+  position: relative;
+}
+
+.introducao-bg::after {
+  content: url("/img/dec/bottom-left.svg");
+  position: absolute;
+  bottom: 160px;
+  left: 40px;
 }
 
 .introducao {
@@ -25,6 +33,10 @@
 }
 
 @media (max-width: 800px) {
+  .introducao-bg::after {
+    display: none;
+  }
+
   .introducao {
     grid-template-columns: 1fr;
   }
