@@ -55,12 +55,26 @@
   position: relative;
 }
 
+.componentes-descricao > a:hover {
+  color: var(--p3);
+}
+
 .componentes-descricao > a:after {
   content: "";
   display: block;
   height: 4px;
   width: 100%;
   background: var(--p1);
+  margin-top: 4px;
+  position: absolute;
+}
+
+.componentes-descricao > a:hover:after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: var(--p3);
   margin-top: 4px;
   position: absolute;
 }
