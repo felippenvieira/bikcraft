@@ -1,0 +1,109 @@
+footer > p {
+  padding: 32px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.78;
+  letter-spacing: 0.015em;
+  color: var(--c6);
+}
+
+.footer-bg {
+  background: var(--c12);
+  color: var(--w);
+  padding-top: 32px;
+}
+
+.footer-bg h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+}
+
+.footer-container {
+  padding: 32px;
+  gap: 32px;
+  justify-content: space-between;
+}
+
+.footer-container p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.78;
+  letter-spacing: 0.015em;
+  color: var(--c5);
+}
+
+.footer-container h1 {
+  padding-bottom: 32px;
+}
+
+.footer-contato-info {
+  padding-bottom: 52px;
+  position: relative;
+}
+
+.footer-contato-info::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: var(--c11);
+  bottom: 25px;
+}
+
+.footer-contato-redes {
+  display: flex;
+  gap: 32px;
+}
+
+.footer-informacoes {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-informacoes a {
+  padding: 8px 12px;
+  display: inline-block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.78;
+  letter-spacing: 0.015em;
+  color: var(--c6);
+  position: relative;
+  cursor: pointer;
+}
+
+.footer-informacoes a:hover {
+  color: var(--w);
+}
+
+.footer-informacoes a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: var(--w);
+  margin-top: 4px;
+  position: absolute;
+}
+
+.footer-informacoes a:hover:after {
+  width: 80%;
+  transition: 0.3s;
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    flex-direction: column;
+  }
+}

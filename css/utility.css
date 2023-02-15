@@ -148,8 +148,3 @@
 .p1-dot {
   color: var(--p1);
 }
-
-/* Delete when finished */
-body {
-  padding-bottom: 300px;
-}

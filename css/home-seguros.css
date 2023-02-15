@@ -91,3 +91,30 @@
   font-weight: 600;
   font-size: 18px;
 }
+
+@media (max-width: 900px) {
+  .seguros-cards {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .seguro-card {
+    padding-left: 46px;
+  }
+
+  .seguros-container h1 {
+    font-size: 3rem;
+  }
+
+  .seguro-card-titulo h2 {
+    font-size: 2rem;
+  }
+
+  .seguro-card-titulo span {
+    font-size: 2rem;
+  }
+
+  .seguro-card-titulo span::after {
+    margin-left: 60px;
+  }
+}
