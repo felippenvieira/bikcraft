@@ -1,0 +1,155 @@
+.article-bg {
+  background: var(--c12);
+  box-shadow: inset 0 -80px var(--w);
+  position: relative;
+}
+
+.article-bg::before {
+  content: "";
+  display: block;
+  height: 80px;
+  width: 100%;
+  background: var(--w);
+  position: absolute;
+  z-index: 0;
+}
+
+.componentes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1500px;
+  gap: 56px;
+  margin: 0 auto;
+  padding-right: 36px;
+}
+
+.componentes-descricao {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  max-width: 516px;
+  place-self: end;
+  padding-left: 36px;
+}
+
+.componentes-descricao > span {
+  color: var(--c5);
+  letter-spacing: 1.5px;
+  padding-bottom: 20px;
+  display: block;
+}
+
+.componentes-descricao h1 {
+  padding-bottom: 32px;
+}
+
+.componentes-descricao > p {
+  color: var(--c5);
+  padding-bottom: 20px;
+}
+
+.componentes-descricao > a {
+  color: var(--p1);
+  text-transform: uppercase;
+  padding-bottom: 80px;
+  display: inline-block;
+  position: relative;
+}
+
+.componentes-descricao > a:after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: var(--p1);
+  margin-top: 4px;
+  position: absolute;
+}
+
+.componentes-descricao-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.componentes-descricao-caracteristicas svg {
+  padding-bottom: 8px;
+}
+
+.componentes-descricao-caracteristicas h2 {
+  color: var(--w);
+  padding-bottom: 8px;
+}
+
+.componentes-descricao-caracteristicas p {
+  color: var(--c5);
+}
+
+.componentes-foto img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  padding-right: 36px;
+  position: relative;
+}
+
+@media (max-width: 800px) {
+  .article-bg {
+    box-shadow: none;
+  }
+  .article-bg::before {
+    display: none;
+  }
+
+  .componentes {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .componentes-descricao {
+    place-self: start;
+    max-width: 100%;
+    padding: 120px 36px;
+  }
+
+  .componentes-descricao span {
+    font-size: 1rem;
+  }
+
+  .componentes-descricao h1 {
+    font-size: 3rem;
+  }
+
+  .componentes-descricao p {
+    font-size: 1.25rem;
+  }
+
+  .componentes-descricao a {
+    font-size: 1.25rem;
+  }
+
+  .componentes-descricao a::after {
+    height: 2px;
+  }
+
+  .componentes-foto {
+    display: none;
+  }
+
+  .componentes-descricao-caracteristicas h2 {
+    font-size: 1.35rem;
+  }
+
+  .componentes-descricao-caracteristicas p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .componentes-descricao-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .componentes-descricao h1 {
+    font-size: 2.35rem;
+  }
+}
