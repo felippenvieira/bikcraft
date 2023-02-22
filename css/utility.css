@@ -149,3 +149,7 @@
 .p1-dot {
   color: var(--p1);
 }
+
+.header-geral {
+  background: var(--c11);
+}

@@ -1,0 +1,60 @@
+.termos {
+  display: block;
+  padding: 60px 32px;
+}
+
+.termos > span {
+  color: var(--c5);
+}
+
+.article-termos {
+  padding: 100px 32px;
+}
+
+article ol li {
+  list-style-type: decimal !important;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  color: var(--c11);
+}
+
+.cabecalho-termo h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  color: var(--c11);
+  padding-bottom: 20px;
+}
+
+.cabecalho-termo ol {
+  padding-bottom: 48px;
+}
+
+.cabecalho-termo ol li {
+  list-style-type: lower-roman !important;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33;
+  color: var(--c10);
+}
+
+@media (max-width: 800px) {
+  .termos h1 {
+    font-size: 3rem;
+  }
+
+  .article-termos {
+    padding: 32px 12px;
+  }
+
+  .cabecalho-termo ol {
+    padding: 0;
+  }
+}
