@@ -9,6 +9,7 @@ header {
 }
 
 .header-list {
+  position: relative;
   display: flex;
   gap: 20px;
 }
@@ -20,7 +21,11 @@ header {
   position: relative;
 }
 
-.header-list a:after {
+.header-detalhe {
+  position: relative;
+}
+
+.header-detalhe::after {
   content: "";
   display: block;
   height: 2px;
@@ -30,7 +35,11 @@ header {
   position: absolute;
 }
 
-.header-list a:hover:after {
+.header-detalhe.ativo::after {
+  width: 75%;
+}
+
+.header-detalhe:hover::after {
   width: 75%;
   transition: 0.3s;
 }
